@@ -1,0 +1,118 @@
+.brand-statement {
+  position: relative;
+  min-height: 100vh;
+  padding: 180px 7vw 160px;
+  background: #f3ebdd;
+  color: #17120f;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.brand-statement::before {
+  content: "";
+  position: absolute;
+  width: 55vw;
+  height: 55vw;
+  right: -30vw;
+  top: -25vw;
+  border-radius: 50%;
+  background: rgba(201, 176, 138, 0.12);
+  pointer-events: none;
+}
+
+.brand-statement-inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.brand-statement-eyebrow {
+  margin: 0 0 70px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+
+  color: #6b4632;
+}
+
+.brand-statement-text {
+  max-width: 1200px;
+}
+
+.brand-statement-line {
+  margin: 0;
+
+  font-family: "Playfair Display", serif;
+  font-size: clamp(4rem, 8vw, 9.5rem);
+  line-height: 0.86;
+  font-weight: 400;
+  letter-spacing: -0.055em;
+
+  overflow: hidden;
+}
+
+.brand-statement-line.accent {
+  color: #6b4632;
+  font-style: italic;
+}
+
+.brand-statement-bottom {
+  margin-top: 100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  border-top: 1px solid rgba(23, 18, 15, 0.18);
+  padding-top: 25px;
+
+  gap: 50px;
+}
+
+.brand-statement-bottom p {
+  max-width: 390px;
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  line-height: 1.9;
+
+  color: rgba(23, 18, 15, 0.58);
+}
+
+.brand-statement-mark {
+  font-family: "Manrope", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.32em;
+
+  color: #6b4632;
+}
+
+@media (max-width: 768px) {
+  .brand-statement {
+    min-height: auto;
+    padding: 120px 24px 110px;
+  }
+
+  .brand-statement-eyebrow {
+    margin-bottom: 50px;
+  }
+
+  .brand-statement-line {
+    font-size: clamp(3.4rem, 15vw, 6rem);
+    line-height: 0.9;
+  }
+
+  .brand-statement-bottom {
+    margin-top: 75px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}

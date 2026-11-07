@@ -1,0 +1,347 @@
+.footer {
+  position: relative;
+  background: #17120f;
+  color: #f3ebdd;
+  padding: 120px 7vw 30px;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+
+  width: 650px;
+  height: 650px;
+
+  right: -350px;
+  bottom: -420px;
+
+  border-radius: 50%;
+
+  background: rgba(107, 70, 50, 0.12);
+
+  pointer-events: none;
+}
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1500px;
+  margin: 0 auto;
+
+  padding-bottom: 90px;
+
+  border-bottom: 1px solid
+    rgba(243, 235, 221, 0.14);
+
+  text-align: center;
+}
+
+.footer-eyebrow {
+  margin: 0 0 55px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.3em;
+
+  color: #c9b08a;
+}
+
+.footer-logo {
+  margin: 0;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(6rem, 14vw, 12rem);
+
+  line-height: 0.72;
+
+  font-weight: 400;
+
+  letter-spacing: -0.07em;
+
+  color: #f3ebdd;
+}
+
+.footer-logo span {
+  color: #c9b08a;
+}
+
+.footer-statement {
+  max-width: 430px;
+
+  margin: 45px auto 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 11px;
+
+  line-height: 1.9;
+
+  color: rgba(243, 235, 221, 0.5);
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1500px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 60px;
+
+  padding: 75px 0 100px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-label {
+  margin-bottom: 25px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 0.28em;
+
+  color: #c9b08a;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 13px;
+}
+
+.footer-links button,
+.footer-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 0;
+
+  border: 0;
+  background: transparent;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 10px;
+
+  color: rgba(243, 235, 221, 0.7);
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.footer-links button span,
+.footer-links a span {
+  transition: transform 0.3s ease;
+}
+
+.footer-links button:hover,
+.footer-links a:hover {
+  color: #c9b08a;
+  transform: translateX(4px);
+}
+
+.footer-links button:hover span,
+.footer-links a:hover span {
+  transform: translate(3px, -3px);
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-info p {
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 10px;
+
+  line-height: 1.7;
+
+  color: rgba(243, 235, 221, 0.65);
+}
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.footer-bottom {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1500px;
+  margin: 0 auto;
+
+  padding-top: 25px;
+
+  border-top: 1px solid
+    rgba(243, 235, 221, 0.12);
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: 0.2em;
+
+  color: rgba(243, 235, 221, 0.3);
+
+  text-transform: uppercase;
+}
+
+.back-to-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 0;
+
+  border: 0;
+  background: transparent;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 0.2em;
+
+  color: rgba(243, 235, 221, 0.55);
+
+  cursor: pointer;
+
+  transition: color 0.3s ease;
+}
+
+.back-to-top span {
+  width: 30px;
+  height: 30px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid
+    rgba(243, 235, 221, 0.25);
+
+  border-radius: 50%;
+
+  font-size: 13px;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  color: #c9b08a;
+}
+
+.back-to-top:hover span {
+  transform: translateY(-4px);
+  border-color: #c9b08a;
+}
+
+/* =========================================
+   RTL
+========================================= */
+
+.rtl .footer {
+  text-align: right;
+}
+
+.rtl .footer-links {
+  align-items: flex-start;
+}
+
+.rtl .footer-links button:hover,
+.rtl .footer-links a:hover {
+  transform: translateX(-4px);
+}
+
+.rtl .footer-links button:hover span,
+.rtl .footer-links a:hover span {
+  transform: translate(-3px, -3px);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .footer {
+    padding: 90px 24px 30px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 35px;
+  }
+
+  .footer-brand {
+    padding-bottom: 70px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-logo {
+    font-size: 5.5rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+}
